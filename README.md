@@ -6,7 +6,7 @@
 ![PHP](https://img.shields.io/badge/PHP-%3E%3D7.4-777BB4.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 [![Website](https://img.shields.io/badge/Website-khepridev.xyz-purple)](https://khepridev.xyz/)
-[![X](https://img.shields.io/badge/X-%40 Khepridev-black)](https://x.com/Khepridev)
+[![X](https://img.shields.io/badge/Follow-%40Khepridev-black?logo=x&logoColor=white)](https://x.com/Khepridev)
 
 **Intelligent Security Protocol for PHP Codebases**
 <br>
