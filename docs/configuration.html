@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration - SentinelPHP MCP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="images/security.png" alt="Logo">
+            SentinelPHP MCP
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home"></i> Overview
+            </a>
+            <a href="configuration.html" class="nav-item active">
+                <i class="fas fa-sliders"></i> Configuration
+            </a>
+            <a href="usage.html" class="nav-item">
+                <i class="fas fa-terminal"></i> Usage & Prompts
+            </a>
+        </nav>
+
+        <div
+            style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.75rem; color: var(--muted-foreground);">
+            v1.1.0 • Local MCP
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div style="margin-bottom: 3rem;">
+                <h1>Configuration</h1>
+                <p>Generate the JSON configuration needed to connect your IDE (Cursor, Windsurf, VS Code) to
+                    SentinelPHP.</p>
+            </div>
+
+            <div class="alert">
+                <i class="fas fa-info-circle"></i>
+                <div>
+                    <strong>How it works:</strong> MCP servers are defined in a JSON config file. This tool generates
+                    the correct JSON for your local PHP installation.
+                </div>
+            </div>
+
+            <div class="card section">
+                <h2><i class="fas fa-wrench"></i> Generator</h2>
+
+                <div class="form-group">
+                    <label>PHP Executable Path</label>
+                    <div class="input-group">
+                        <input type="text" id="phpPath" placeholder="e.g. C:\laragon\bin\php\php.exe">
+                        <button id="detectBtn" class="btn btn-secondary" onclick="detectPhp()">
+                            <i class="fas fa-wand-magic-sparkles"></i> Auto-Detect
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Server Script Path (server.php)</label>
+                    <input type="text" id="serverPath" value="c:\laragon\www\php-pdo-class\mcp\server.php">
+                </div>
+
+                <button class="btn btn-primary" onclick="generateConfig()">
+                    <i class="fas fa-code"></i> Generate JSON
+                </button>
+            </div>
+
+            <div id="configOutput" class="card section" style="display: none; border-color: var(--success);">
+                <div
+                    style="margin-bottom: 1rem; color: var(--success); font-weight: 600; display:flex; align-items:center; gap:0.5rem;">
+                    <i class="fas fa-check-circle"></i> Generated Configuration
+                </div>
+
+                <!-- This container will be filled by config.js with <code...> and <button...> -->
+                <pre id="jsonContainer" style="margin:0;"></pre>
+
+                <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--muted-foreground);">
+                    Paste this into your <code>mcp_config.json</code> file.
+                </div>
+            </div>
+
+            <footer class="footer">
+                Developed by <strong>Khepridev</strong>
+                <div class="social-links">
+                    <a href="https://khepridev.xyz" target="_blank" class="social-link">
+                        <i class="fas fa-globe"></i> Website
+                    </a>
+                    <a href="https://github.com/Khepridev" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://x.com/Khepridev" target="_blank" class="social-link">
+                        <i class="fab fa-x-twitter"></i> X.com
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <script src="js/config.js"></script>
+</body>
+
+</html>

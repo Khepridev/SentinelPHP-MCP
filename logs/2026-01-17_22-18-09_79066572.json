@@ -1,0 +1,23 @@
+{
+    "id": "analysis_696c0aa1365684.79066572",
+    "timestamp": "2026-01-17 22:18:09",
+    "code_hash": "c22bef5e837c7ed0735f709efbea93d9",
+    "code_length": 1785,
+    "vulnerabilities_found": 1,
+    "severity_breakdown": {
+        "CRITICAL": 0,
+        "HIGH": 1,
+        "MEDIUM": 0,
+        "LOW": 0
+    },
+    "metadata": {
+        "vulnerability_types": [
+            "sql_injection",
+            "xss",
+            "dos"
+        ],
+        "severity_filter": "medium",
+        "test_mode": true
+    },
+    "real_vulnerabilities": []
+}

@@ -1,0 +1,15 @@
+{
+    "total_analyses": 1,
+    "total_vulnerabilities": 1,
+    "patterns": {
+        "FIND_IN_SET($value, $column) without binding": {
+            "count": 1,
+            "severity": "HIGH",
+            "first_seen": "2026-01-17 22:18:09",
+            "examples": []
+        }
+    },
+    "false_positives": [],
+    "verified_exploits": [],
+    "last_updated": "2026-01-17 22:18:09"
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelPHP MCP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="images/security.png" alt="Logo">
+            SentinelPHP MCP
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item active">
+                <i class="fas fa-home"></i> Overview
+            </a>
+            <a href="configuration.html" class="nav-item">
+                <i class="fas fa-sliders"></i> Configuration
+            </a>
+            <a href="usage.html" class="nav-item">
+                <i class="fas fa-terminal"></i> Usage & Prompts
+            </a>
+        </nav>
+
+        <div
+            style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.75rem; color: var(--muted-foreground);">
+            v1.1.0 • Local MCP
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h1 style="justify-content: center; font-size: 2.5rem; margin-bottom: 0.75rem;">SentinelPHP MCP</h1>
+                <p style="font-size: 1.1rem; color: var(--muted-foreground);">Intelligent Security Protocol for PHP
+                    Codebases.</p>
+                <div style="display: flex; gap: 0.75rem; justify-content: center; margin-top: 1.5rem;">
+                    <span class="badge badge-low">PHP 7.4+</span>
+                    <span class="badge badge-low">MCP Standard</span>
+                    <span class="badge badge-low">Zero Trust</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="alert">
+                    <i class="fas fa-info-circle"></i>
+                    <div>
+                        <strong>Quick Start:</strong> Connect your AI assistant (Cursor, Windsurf) to this server via <a
+                            href="configuration.html"
+                            style="color: inherit; text-decoration: underline;">Configuration</a>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card section">
+                <h2><i class="fas fa-bullseye"></i> Core Intelligence</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem;">
+                    <div>
+                        <h3
+                            style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--foreground); font-size: 1rem;">
+                            <i class="fas fa-shield-halved"></i> Zero Trust Core
+                        </h3>
+                        <p>Unlike basic regex scanners, Sentinel analyzes execution context. Every input is considered
+                            malicious until explicitly sanitized.</p>
+                    </div>
+                    <div>
+                        <h3
+                            style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--foreground); font-size: 1rem;">
+                            <i class="fas fa-file-code"></i> Proof of Concept
+                        </h3>
+                        <p>It doesn't just guess; it generates executable attack payloads to verify if a vulnerability
+                            is actually exploitable.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card section">
+                <h2><i class="fas fa-magnifying-glass-chart"></i> Detection Matrix</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Severity</th>
+                            <th>Scope</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>SQL Injection</strong></td>
+                            <td><span class="badge badge-critical">CRITICAL</span></td>
+                            <td>Operators, Identifiers, FIND_IN_SET, UNION</td>
+                        </tr>
+                        <tr>
+                            <td><strong>XSS</strong></td>
+                            <td><span class="badge badge-high">HIGH</span></td>
+                            <td>Reflected Output, DOM, Unsafe Attributes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>DoS / ReDoS</strong></td>
+                            <td><span class="badge badge-high">HIGH</span></td>
+                            <td>Unbounded Loops, SLEEP, Catastrophic Regex</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Auth Failures</strong></td>
+                            <td><span class="badge badge-critical">CRITICAL</span></td>
+                            <td>Weak Hashing, Session Fixation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <footer class="footer">
+                Developed by <strong>Khepridev</strong>
+                <div class="social-links">
+                    <a href="https://khepridev.xyz" target="_blank" class="social-link">
+                        <i class="fas fa-globe"></i> Website
+                    </a>
+                    <a href="https://github.com/Khepridev" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://x.com/Khepridev" target="_blank" class="social-link">
+                        <i class="fab fa-x-twitter"></i> X.com
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+</body>
+
+</html>

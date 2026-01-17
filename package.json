@@ -1,0 +1,21 @@
+{
+  "name": "php-security-audit-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server for PHP Security Auditing - Protocol-based vulnerability detection",
+  "main": "server.php",
+  "scripts": {
+    "start": "php server.php"
+  },
+  "keywords": [
+    "mcp",
+    "security",
+    "php",
+    "audit",
+    "vulnerability",
+    "sql-injection",
+    "xss",
+    "dos"
+  ],
+  "author": "Security Audit Team",
+  "license": "MIT"
+}
