@@ -1,7 +1,14 @@
-# Runtime and temporary files
-logs/
-analytics/
-knowledge/
+# Runtime files (keep directories, ignore contents)
+logs/*
+!logs/.gitkeep
+
+analytics/*
+!analytics/.gitkeep
+
+knowledge/*
+!knowledge/.gitkeep
+
+# Log files
 *.log
 
 # IDE and editor files
